@@ -1,0 +1,30 @@
+{
+  "name": "webpack-project-boilerplate",
+  "version": "1.0.0",
+  "description": "This is a template repo for creating projects dependent on webpack",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/illusivesunrae/webpack-project-boilerplate.git"
+  },
+  "author": "Rachel O'Connor",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/illusivesunrae/webpack-project-boilerplate/issues"
+  },
+  "homepage": "https://github.com/illusivesunrae/node-project-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5"
+  }
+}
