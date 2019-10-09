@@ -14,6 +14,10 @@ module.exports = {
     libraryTarget: 'var',
     library: 'Component'
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    index: 'index.html'
+  },
   module: {
     rules: [
       {
