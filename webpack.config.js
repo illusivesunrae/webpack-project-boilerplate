@@ -1,4 +1,10 @@
 const path = require('path');
+const webpack = require('webpack');
+const pkg = require('./package.json');
+const banner = pkg.name + ` - @version ` + pkg.version + `
+
+Copyright (C) 2018 The Trustees of Indiana University
+SPDX-License-Identifier: BSD-3-Clause`;
 
 module.exports = {
   entry: './src/index.js',
@@ -21,5 +27,8 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.BannerPlugin(banner)
+  ]
 };
